@@ -6,7 +6,7 @@ class Solution {
         map.put('(', ')');
         map.put('{', '}');
         for(char c : s.toCharArray()) {
-            if (c == '(' || c == '[' || c == '{') {
+            if (map.containsKey(c)) {
                 stack.push(map.get(c));
             } else {
                 if (stack.isEmpty()) {
