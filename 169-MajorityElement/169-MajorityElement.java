@@ -1,4 +1,5 @@
 class Solution {
+    // Boyer-Moore Voting Algorithm
     public int majorityElement(int[] nums) {
         Integer candidate = null;
         int count = 0;
